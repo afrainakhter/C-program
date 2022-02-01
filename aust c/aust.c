@@ -1,19 +1,26 @@
+
+// func - sum,multiply(calculator)
+// project- data insert
+// 2 kind _ stand lib, user define
+// returntype funcname(list of parameter);
+// int main();
+// int disply();
 #include <stdio.h>
-int sum(int n);
+int sum(int, int); // parameter// prototype = function declaration funtion dekhte kmn 
+
 int main()
 {
+    int a, b;
+    scanf("%d%d", &a, &b);
+    // argument
 
-    int n;
-    printf("enter number:");
-    scanf("%d", &n);
-
-    printf("%d", sum(n));
+    printf("%d", sum(a, b));//arrgument
 }
-int sum(int n)
+int sum(int x, int y) // argument pass
 {
-    if (n == 0)
-        return 0;
-    else
+    int res;
+    res = x + y;
 
-        return n + sum(n - 1);
+    return res;
 }
+
